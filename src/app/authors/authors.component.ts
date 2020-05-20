@@ -3,14 +3,15 @@ import { AuthorsService } from "../authors.service";
 
 @Component({
   selector: "app-authors",
-  template: `
-    <h2>{{ authors.length }} Authors</h2>
-    <ul>
-      <li *ngFor="let author of authors">
-        {{ author }}
-      </li>
-    </ul>
-  `,
+  templateUrl: "./authors.component.html",
+  // template: `
+  //   <h2>{{ authors.length }} Authors</h2>
+  //   <ul>
+  //     <li *ngFor="let author of authors">
+  //       {{ author }}
+  //     </li>
+  //   </ul>
+  // `,
   styleUrls: ["./authors.component.scss"],
 })
 export class AuthorsComponent implements OnInit {
