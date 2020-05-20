@@ -9,7 +9,6 @@ export class AuthorsService {
   getAuthors = () => {
     console.log("Service authors: " + this.authors);
     return ["Author One", "Author Two", "Author Three"];
-    // return "something";
   };
 
   constructor() {}
